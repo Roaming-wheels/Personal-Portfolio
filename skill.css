@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  } 
+*{box-sizing: border-box}
+.topnav {
+    overflow: hidden;
+    background-color:#93bddf;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #1e86db;
+    color: gainsboro;
+  }
+  .inner{
+    padding-top: 20px;
+  }
+  .header{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+    position: relative;
+  }
+  .header:after{
+    content:'';
+    position: absolute;
+    bottom: 0;
+    left:50%;
+    transform:translateX(-50%);
+    height: 4px;
+    width: 100px;
+    background-color: transparent;
+  }
+  .container{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
+  }
+  .skill-box{
+    padding: 1rem;
+    color: rgb(4, 4, 4);
+    cursor: pointer;
+  }
+  .skill-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .skill-title::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    width: 35px;
+    height:4px;
+    border-radius: 2px 0 0 2px;
+    background-color:transparent;
+  }
+  .skill-title::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    width: 35px;
+    height:4px;
+    border-radius: 0 2px 2px 0;
+    background-color:transparent;
+  }
+  .img{
+    width: 90px;
+    height: 90px;
+    position: relative;
+    border-radius: 45px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .skill-title{
+    color:#000000;
+    margin-top:0.5rem;
+  }
+  .skill-icon{
+    width:50px;
+    z-index: 2;
+
+  }
+  #footer{
+  position:fixed;
+  bottom: 0;
+}

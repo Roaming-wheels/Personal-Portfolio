@@ -1,0 +1,95 @@
+<html>
+<title>Get in touch</title>
+<body background="C:\Users\Kisha\Desktop\bg2.jpg">
+<head>
+<link rel="stylesheet" href="Contact.css">
+</head>
+<script>  
+function validateform(){  
+var name=document.myform.name.value;  
+var num=document.myform.num.value; 
+var x=document.myform.email.value;  
+var atposition=x.indexOf("@");  
+var dotposition=x.lastIndexOf("."); 
+
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}
+else if(num.length!=10 || num==""){
+	alert("number is not valid");
+	return false;
+ 
+}
+else if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+  alert("Please enter a valid e-mail address");
+  return false;  
+}
+
+}  
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+<div class="topnav">
+  <a href="Home.html">Home</a>
+  <a href="About.html">About Me</a>
+  <a href="Skills.html">Skills</a>
+  <a href="project.html">Projects</a>
+  <a class="active" href="Contact.html">Contact me</a>
+</div> 
+<body><center><h3>Register yourself to get in touch.</center></h3><br>
+<form action="respond.html"
+name="myform"  onsubmit="return validateform()" > 
+<center>
+<p><table align="center" cellpadding="10" class="design" border="2"> 
+<tr>
+<td>Name:</td> 
+<td><input type="text" name="name"><br/> </td>
+</tr>
+<tr> 
+<td>Number:</td> 
+<td><input type="text" name="num"><span id="numloc"></span><br/></td>
+</tr>
+<tr> 
+<td>Email:</td>
+<td> <input type="text" name="email"><br/>
+</td>
+</tr>
+<tr>
+<td>Country:</td>
+<td>
+<select>
+  <option>Select</option>
+	<option>India</option> 
+	<option>Pakistan</option> 
+	<option>Germany</option> 
+	<option>Others</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Message:</td>
+<td>
+<textarea name="Message" rows="5" cols="20" placeholder="message/">
+</textarea>
+</td>
+</tr>
+<tr> 
+<td align="center" colspan="2">
+<input type="submit" value="submit"></td>
+</tr>  
+</table></p>
+</center>
+</form><hr> 
+<div id="footer">
+  <p>Portfolio By</p>
+  <a href="About.html">Kishan Kumar Sahu</a>
+</div> 
+</body>
+</html>
+
+
+
+ 
+
+ 
